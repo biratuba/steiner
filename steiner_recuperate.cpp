@@ -40,7 +40,7 @@ pair<ll,vector<pair<int,int>>> steiner(){
     }
     vector<pair<int,int>> edges;
     queue<pair<int, int>> q;
-    pq.push_back({1<<k}-1,u);
+    q.push_back({1<<k}-1,u);
     while(!q.empty()){
         bool cont = 0;
         auto [mask,u] = q.top();q.pop;
