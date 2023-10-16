@@ -40,7 +40,7 @@ pair<ll,vector<pair<int,int>>> steiner(){
     }
     vector<pair<int,int>> edges;
     queue<pair<int, int>> q;
-    if(ans == d[(1 << k) - 1][v])pq.push_back({1<<k}-1,u),break;
+    pq.push_back({1<<k}-1,u);
     while(!q.empty()){
         bool cont = 0;
         auto [mask,u] = q.top();q.pop;
